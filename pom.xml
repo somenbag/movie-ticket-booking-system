@@ -27,6 +27,7 @@
         <module>payment-service</module>
         <module>notification-service</module>
         <module>api-gateway</module>
+        <module>commons</module>
     </modules>
 
     <dependencies>
@@ -35,6 +36,10 @@
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
 
@@ -46,6 +51,11 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.movie.ticket.booking.system</groupId>
+                <artifactId>commons</artifactId>
+                <version>${project.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

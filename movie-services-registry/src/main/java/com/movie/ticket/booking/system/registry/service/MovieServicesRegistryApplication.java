@@ -8,7 +8,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 @EnableEurekaServer
 public class MovieServicesRegistryApplication {
 
-    public static void main (String [] args) {
+    public static void main (String [] args) throws InterruptedException {
         SpringApplication.run (MovieServicesRegistryApplication.class, args);
     }
 
